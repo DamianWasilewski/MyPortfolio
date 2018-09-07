@@ -73,10 +73,10 @@ html, body {
 #Technologies h2 {
   text-align: center;
 	font-size: 2rem;
-	color: rgb(102, 102, 102);
+	color: black;
 }
 #Technologies h3 { 
-	color: rgb(102, 102, 102);
+	color: black;
 }
 
 .Technologia {
@@ -87,7 +87,7 @@ html, body {
 .Technologia i {
   font-size: 5rem;
 	margin-top: 15px;
-	color: rgb(102, 102, 102);
+	color: black;
 }
 
 #fixed {
