@@ -28,7 +28,7 @@ html, body {
 }
 
 .navbar {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -97,7 +97,7 @@ html, body {
 }
 
 .header h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 .project-item img {
