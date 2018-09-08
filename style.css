@@ -98,9 +98,17 @@ html, body {
   background-size: cover;
 }
 
+.header {
+  padding-top: 1%;
+}
 .header h2 {
   font-size: 3rem;
   text-align: center;
+  color: black;
+}
+
+#projects {
+  background: rgb(57, 64, 70);
 }
 .project-item img {
   width: 100%;
