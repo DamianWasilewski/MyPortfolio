@@ -1,89 +1,189 @@
 * {
   padding: 0;
   margin: 0;
+  line-height: 1;
 }
-h2 {
-  display: block;
-  font-size: 1.5em;
-  -webkit-margin-after: 0.83em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
-}
-h3 {
-  display: block;
-  font-size: 1.17em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
-  text-align: center;
+
+a {
+  text-decoration: none;
 }
 
 html, body {
 	height: 100%;
-	width: 100%;
+  width: 100%;
+  font-family: 'Mukta Malar', sans-serif;
 }
 
-.navbar {
-	font-size: 1em;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #D5D5D5;
+.main-header__logo {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 20px 20px 10px 20px;
+}
+
+.main-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(57, 64, 70, .5);
+  z-index: 1;
+  padding-right: 2rem;
+  float: right;
+}
+
+.main-nav__items {
+  text-align: center;
+  display: none;
+}
+
+.active {
+  display: block;
+  float: none;
   text-align: center;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-	color: white;
+.main-nav__item {
+  list-style: none;
+  padding: 0.45rem 0;
 }
 
-.navbar-collapse.collapse.in {
-  display: inline-block;
+.main-nav__item a {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
-#Start {
+#start {
 	background: url(img/bg-fixed.jpg) no-repeat center center fixed;
-	display: table;
+  display: table;
+  top: 0;
+  left: 0;
 	height: 100%;
 	position: relative;
 	width: 100%;
-	background-size: cover;
+  background-size: cover;
+  
 }
 
 .landing-text {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   color: white;
 }
 
-#About {
+.landing-text-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-text h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.landing-text p {
+  font-size: 1rem;
+  margin: 2rem 0;
+  font-weight: 400;
+  flex-basis: 80%;
+  text-align: center;
+}
+.landing-text-buttons {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.landing-text-buttons button {
+  width: 80%;
+  padding: 14px 0;
+  margin: 1rem 5px;
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  color: rgb(94, 96, 99);
+  background-color: transparent;
+  border: 1px solid rgb(94, 96, 99);
+  padding: 13px 0;
+  transition: color 0.4s, background 0.4s;
+}
+
+.landing-text-buttons a button:hover {
+  background-color :rgb(94, 96, 99);
+  color: #333;
+}
+
+#about {
   padding: 5% 0 5% 0;
 }
 
-.img-responsive {
-  max-width: 100%;
+.about-container {
+  display: flex;
 }
 
-#Technologies {
+.about-photo {
+  display: none;
+  flex-basis: 30%;
+}
+
+.about-photo img {
+  width: 100%;
+}
+
+.about-text {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.about-text h2 {
+  text-align: center;
+}
+
+#technologies {
   padding: 1% 0 1% 0;
   background: rgb(57, 64, 70);
 }
-#Technologies h2 {
+#technologies h2 {
   text-align: center;
 	font-size: 2rem;
 	color: black;
 }
-#Technologies h3 { 
+#technologies h3 { 
 	color: black;
 }
 
-.Technologia {
-  text-align: center;
-  font-size: 1.5em;
+.technologies-icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
-.Technologia i {
+.technologies-icon {
+  text-align: center;
+  font-size: 1.5em;
+  flex-basis: 50%;
+  padding-top: 1.5rem;
+}
+
+.technologies-icon i {
   font-size: 5rem;
 	margin-top: 15px;
 	color: black;
@@ -113,4 +213,100 @@ html, body {
 .project-item img {
   width: 100%;
   height: 100%;
+}
+
+/* Mobile navigation */
+.toggle {
+  padding: 1rem 1rem 0 0.5rem;
+  text-align: right;
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-size: 2rem;
+  float: right;
+}
+
+@media (min-width: 1199px) {
+  .container {
+    width: 1200px;
+  }
+  .toggle {
+    display: none;
+  }
+  .main-header__logo {
+    padding: 20px 20px 10px 20px;
+  }
+  .main-nav__items {
+    list-style: none;
+    float: right;
+    display: inline-block;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    text-align: center;
+    padding: 25px 20px 15px 20px;
+  }
+
+  .main-nav__item a {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .landing-text h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    flex-basis: 100%;
+  }
+  
+  .landing-text p {
+    font-size: 2.6rem;
+    font-weight: 400;
+    flex-basis: 80%;
+  }
+
+  .landing-text-buttons button {
+    width: 18%;
+  }
+
+  .about-container {
+    display: flex;
+  }
+  
+  .about-photo {
+    display: block;
+    flex-basis: 30%;
+  }
+  
+  .about-photo img {
+    width: 100%;
+  }
+  
+  .about-text {
+    flex-basis: 70%;
+    font-size: 1.2rem;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+  
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .technologies-icon {
+    flex-basis: 16.66%;
+  }
+}
+
+@media (orientation: landscape) {
+  .landing-text-buttons button {
+    width: 40%;
+  }
+
+  .landing-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .landing-text p {
+    margin: 1rem 0;
+  }
 }

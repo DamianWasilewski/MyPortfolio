@@ -3,88 +3,95 @@
 <head>
   <title>Damian Wasilewski - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Malar:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top" role="navigation">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand"><img src="img/w3newbie.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Start</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">O mnie</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Technologie</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Kontakt</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="main-nav">
+      <div class="container">
+      <div class="main-header__logo">
+        dWasilewski
+      </div>
+      <div class="toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="#">Start</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">O mnie</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Technologie</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Projekty</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>  
     </div>
-  </nav>
 
-<section id="Start">
+<section id="start">
   <div class="landing-text">
-    <h1>Hej, mam na imię Damian i uczę się front-endu</h1>
-    <a href="#" class="btn btn-outline-light btn-lg">Continue</a>
-  </div>
-</section>
-
-<section id="About">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-xs-6">
-        <img src="img/ryj.png" class="img-responsive" alt="My Photo">
+    <div class="container">
+      <div class="landing-text-content">
+      <h1>Damian Wasilewski</h1>
+      <p>Początkujący front-end developer, szukający pierwszej pracy</p>
+      <div class="landing-text-buttons">
+          <a href="#"><button>GitHub</button></a>
+          <a href="#"><button>Kontakt</button></a>
       </div>
-      <div class="col-sm-6 col-xs-6 text-center">
-        <h2>About me:</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ex a neque suscipit euismod. Nam vulputate leo sollicitudin, condimentum nisi at, dictum augue. Quisque aliquet ipsum ac lacus cursus, quis convallis est blandit. In venenatis, ex sed finibus dictum, risus erat tempor nulla, non elementum sapien erat eu ipsum. Mauris ultricies, leo in eleifend pharetra, ex magna sodales felis, egestas faucibus metus odio sed lectus. Proin nec urna vestibulum, finibus arcu at, dignissim augue. Maecenas quis enim id lectus consectetur auctor id vitae magna. Sed quis malesuada ligula. Quisque tempus placerat metus quis venenatis. Aliquam sollicitudin imperdiet urna sed vulputate. Mauris sed luctus dui. Phasellus sit amet euismod tellus. In vitae blandit ligula, quis faucibus orci. Nullam volutpat molestie commodo.</p>
-      </div>
+    </div>
     </div>
   </div>
 </section>
 
-<section id="Technologies">
+<section id="about">
+  <div class="container about-container">
+      <div class="about-photo">
+        <img src="img/ryj.png" alt="My Photo">
+      </div>
+      <div class="about-text">
+        <h2>About me:</h2>
+        <p class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ex a neque suscipit euismod. Nam vulputate leo sollicitudin, condimentum nisi at, dictum augue. Quisque aliquet ipsum ac lacus cursus, quis convallis est blandit. In venenatis, ex sed finibus dictum, risus erat tempor nulla, non elementum sapien erat eu ipsum. Mauris ultricies, leo in eleifend pharetra, ex magna sodales felis, egestas faucibus metus odio sed lectus. Proin nec urna vestibulum, finibus arcu at, dignissim augue. Maecenas quis enim id lectus consectetur auctor id vitae magna. Sed quis malesuada ligula. Quisque tempus placerat metus quis venenatis. Aliquam sollicitudin imperdiet urna sed vulputate. Mauris sed luctus dui. Phasellus sit amet euismod tellus. In vitae blandit ligula, quis faucibus orci. Nullam volutpat molestie commodo.</p>
+      </div>
+  </div>
+</section>
+
+<section id="technologies">
   <div class="container technologies-container">
     <div class="header">
       <h2>Technologie</h2>
     </div>
-    <div class="row Technologie-ikony">
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+    <div class="technologies-icons">
+      <div class="technologies-icon">
         <h3>HTML 5</h3>
         <i class="fab fa-html5"></i>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+      <div class="technologies-icon">
         <h3>CSS 3</h3>
         <i class="fab fa-css3-alt"></i>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+      <div class="technologies-icon">
         <h3>JS</h3>
         <i class="fab fa-js-square"></i>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+      <div class="technologies-icon">
         <h3>Bootstrap</h3>
         <i class="fas fa-mobile-alt"></i>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+      <div class="technologies-icon">
         <h3>React</h3>
         <i class="fab fa-react"></i>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 Technologia">
+      <div class="technologies-icon">
         <h3>GIT</h3>
         <i class="fab fa-git-square"></i>
       </div>
@@ -98,19 +105,17 @@
     <div class="header">
       <h2>Moje Prace</h2>
     </div>
-    <div class="row all-projects">
-      <div class="col-sm-6 project-item">
+    <div class="all-projects">
+      <div class="project-item">
         <img src="img/sass.png" alt="My Project">
       </div>
-      <div class="col-sm-6 project-item">
+      <div class="project-item">
           <img src="img/less.png" alt="My Project">
         </div>
     </div>
   </div>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
