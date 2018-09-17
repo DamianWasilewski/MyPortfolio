@@ -265,7 +265,7 @@ html, body {
   .main-nav__item {
     display: inline-block;
     text-align: center;
-    padding: 25px 20px 15px 20px;
+    padding: 30px 20px 10px 20px;
   }
 
   .main-nav__item a {
