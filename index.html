@@ -54,12 +54,14 @@
 </section>
 
 <section id="about">
+  <div class="about-header">
+    <h2>O mnie</h2>
+  </div>
   <div class="container about-container">
       <div class="about-photo">
         <img src="img/ryj.png" alt="My Photo">
       </div>
       <div class="about-text">
-        <h2>About me:</h2>
         <p class>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ex a neque suscipit euismod. Nam vulputate leo sollicitudin, condimentum nisi at, dictum augue. Quisque aliquet ipsum ac lacus cursus, quis convallis est blandit. In venenatis, ex sed finibus dictum, risus erat tempor nulla, non elementum sapien erat eu ipsum. Mauris ultricies, leo in eleifend pharetra, ex magna sodales felis, egestas faucibus metus odio sed lectus. Proin nec urna vestibulum, finibus arcu at, dignissim augue. Maecenas quis enim id lectus consectetur auctor id vitae magna. Sed quis malesuada ligula. Quisque tempus placerat metus quis venenatis. Aliquam sollicitudin imperdiet urna sed vulputate. Mauris sed luctus dui. Phasellus sit amet euismod tellus. In vitae blandit ligula, quis faucibus orci. Nullam volutpat molestie commodo.</p>
       </div>
   </div>
@@ -117,7 +119,38 @@
 </section>
 <section id="footer">
   <div class="container footer-container">
-
+    <div class="footer-header">
+      <h2>Skontaktuj się</h2>
+    </div>
+    <div class="footer-content">
+    <div class="contact-form">
+      <form method="POST" action="/send_form.php" id="contact_form">
+        <input type="text" name="name" id="name" class="formField" placeholder="Imię i nazwisko"/>
+        <input type="text" name="email" id="email" class="formField" placeholder="Email"/>
+        <textarea rows="3" name="message" id="message" class="formField" placeholder="Treść wiadomości"></textarea>
+        <input type="submit" value="Wyślij wiadomość" id="submit">
+      </form>
+    </div>
+    <div class="footer-contact-icons">
+      <ul class="footer-contact-icons-list">
+        <li>
+          <a href="mailto:damian.wasilewski1993@gmail.com">
+            <i class="fas fa-envelope"></i>damian.wasilewski1993@gmail.com
+          </a>
+        </li>
+        <li>
+            <a href="http://github.com/DamianWasilewski">
+              <i class="fab fa-github"></i>Github
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/damian.wasilewski.733">
+              <i class="fab fa-facebook-square"></i>Facebook
+            </a>
+        </li>
+      </ul>
+    </div>
+    </div>
   </div>
 </section>
 

@@ -135,10 +135,20 @@ html, body {
 }
 
 #about {
-  padding: 5% 0 5% 0;
+  padding: 1% 0 1% 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-header h2 {
+  font-size: 4rem;
 }
 
 .about-container {
+  padding: 2rem 0;
   display: flex;
 }
 
@@ -169,12 +179,12 @@ html, body {
 }
 #technologies h2 {
   text-align: center;
-	font-size: 2rem;
-  color: rgb(0, 0, 0);
+	font-size: 4rem;
+  color: whitesmoke;
   margin-top: 1rem;
 }
 #technologies h3 { 
-	color: rgb(0, 0, 0);;
+	color: whitesmoke;
 }
 
 .technologies-icons {
@@ -193,7 +203,7 @@ html, body {
 .technologies-icon i {
   font-size: 5rem;
 	margin-top: 15px;
-	color: rgb(0, 0, 0);
+	color: whitesmoke;
 }
 
 #fixed {
@@ -206,12 +216,13 @@ html, body {
 }
 
 .projects-header {
-  padding-top: 1%;
+  padding-top: 1rem;
 }
 .projects-header h2 {
-  font-size: 2rem;
+  padding: 5rem 0 5rem 0;
+  font-size: 4rem;
   text-align: center;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .projects-items {
@@ -219,6 +230,7 @@ html, body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 
 .projects-item {
@@ -231,6 +243,113 @@ html, body {
   max-height: 100%;
 }
 
+#footer {
+  background: rgb(57, 64, 70);
+}
+
+.footer-header h2 {
+  padding: 5rem 0 2rem 0;
+  font-size: 4rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    flex-basis: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus,
+.hero-area-btns button:focus,
+.contact-form input[type="submit"]:focus {
+    outline: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form form textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #DDD;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    color: #DDD;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.contact-form textarea {
+  flex-basis: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  background: transparent;
+  border: 1px solid #DDD;
+  color: #DDD;
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 2rem;
+  padding: 10px 25px;
+  border-radius: 20px;
+  transition: color 0.2s, border 0.4s, transform 0.4s;
+  margin: 0 auto;
+}
+
+.contact-form input[type="submit"]:hover {
+  color: rgb(94, 96, 99);
+  border-color: rgb(94, 96, 99);
+}
+
+.footer-contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.footer-contact-icons-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-contact-icons-list li {
+  margin-bottom: 1rem;
+}
+
+.footer-contact-icons-list li a {
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 1.1rem;
+  color: whitesmoke;
+}
+
+.footer-contact-icons-list li a i {
+  margin-right: 0.5rem;
+}
 /* Mobile navigation */
 .toggle {
   padding: 10px;
@@ -295,7 +414,7 @@ html, body {
   
   .about-photo {
     display: block;
-    flex-basis: 30%;
+    flex-basis: 20%;
   }
   
   .about-photo img {
@@ -303,7 +422,7 @@ html, body {
   }
   
   .about-text {
-    flex-basis: 70%;
+    flex-basis: 80%;
     font-size: 1.2rem;
     padding-left: 50px;
     box-sizing: border-box;
@@ -321,6 +440,33 @@ html, body {
     margin-top: 1rem;
     flex-basis: 50%;
   }
+
+  .footer-content {
+    margin-bottom: 3rem;
+  }
+  .contact-form {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .footer-contact-icons {
+    flex-basis: 50%;
+    justify-content: center;
+  }
+
+  .footer-contact-icons li a {
+    font-size: 1.7rem;
+  }
+
+  .footer-contact-icons li a i {
+    margin-right: 1rem;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    flex-basis: 48%;
+}
+
 }
 
 @media (orientation: landscape) {
