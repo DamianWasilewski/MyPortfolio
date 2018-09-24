@@ -44,6 +44,7 @@ html, body {
   z-index: 1;
   padding-right: 2rem;
   float: right;
+  transition: 0.3s;
 }
 
 .main-nav__items {
@@ -66,6 +67,13 @@ html, body {
   color: whitesmoke;
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+.main-nav__item a:hover {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: 0.3s;
 }
 
 #start {
@@ -144,7 +152,8 @@ html, body {
 }
 
 .about-header h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  padding: 5rem 0 2rem 0;
 }
 
 .about-container {
@@ -174,14 +183,14 @@ html, body {
 }
 
 #technologies {
-  padding: 1% 0 1% 0;
+  padding: 1rem 0 1rem 0;
   background: rgb(57, 64, 70);
 }
 #technologies h2 {
   text-align: center;
-	font-size: 4rem;
+	font-size: 3.5rem;
   color: whitesmoke;
-  margin-top: 1rem;
+  padding-top: 5rem;
 }
 #technologies h3 { 
 	color: whitesmoke;
@@ -220,7 +229,7 @@ html, body {
 }
 .projects-header h2 {
   padding: 5rem 0 5rem 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -249,7 +258,7 @@ html, body {
 
 .footer-header h2 {
   padding: 5rem 0 2rem 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   color: whitesmoke;
 }
