@@ -374,6 +374,20 @@ html, body {
   vertical-align: middle;
 }
 
+@media (orientation: landscape) {
+  .landing-text-buttons button {
+    width: 40%;
+  }
+
+  .landing-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .landing-text p {
+    margin: 1rem 0;
+  }
+}
+
 @media (min-width: 1199px) {
   .container {
     width: 1200px;
@@ -382,8 +396,8 @@ html, body {
     display: none;
   }
   .main-header__logo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2rem;
+    height: 2rem;
     vertical-align: middle;
     padding: 0.5rem;
   }
@@ -397,13 +411,13 @@ html, body {
   .main-nav__item {
     display: inline-block;
     text-align: center;
-    padding: 30px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   .main-nav__item a {
     position: relative;
     color: whitesmoke;
-    font-size: 1.3rem;
+    font-size: 1rem;
     outline: none;
     padding: 0 0 10px;
   }
@@ -427,19 +441,20 @@ html, body {
   }
 
   .landing-text h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 400;
     flex-basis: 100%;
   }
   
   .landing-text p {
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 400;
     flex-basis: 80%;
   }
 
   .landing-text-buttons button {
     width: 18%;
+    font-size: 1.5rem;
   }
 
   .about-container {
@@ -457,22 +472,51 @@ html, body {
   
   .about-text {
     flex-basis: 80%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 50px;
     box-sizing: border-box;
   }
   
-  .about-text h2 {
+  .about-header h2 {
     text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+  }
+
+  #technologies h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
   }
 
   .technologies-icon {
     flex-basis: 16.66%;
   }
 
+  .technologies-icon h3 {
+    font-size: 1.5rem;
+  }
+
+  .technologies-icon i {
+    font-size: 3rem;
+  }
+  
+  .projects-header h2 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+  }
+
+  .projects-items {
+    justify-content: space-between;
+  }
+
   .projects-item {
     margin-top: 1rem;
-    flex-basis: 50%;
+    flex-basis: 45%;
+  }
+
+  .footer-header h2 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
   }
 
   .footer-content {
@@ -489,7 +533,7 @@ html, body {
   }
 
   .footer-contact-icons li a {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 
   .footer-contact-icons li a i {
@@ -499,20 +543,14 @@ html, body {
   .contact-form input[type="text"],
   .contact-form input[type="email"] {
     flex-basis: 48%;
+    font-size: 1rem;
 }
-
-}
-
-@media (orientation: landscape) {
-  .landing-text-buttons button {
-    width: 40%;
+  .contact-form form textarea {
+    font-size: 1rem;
   }
 
-  .landing-text h1 {
-    font-size: 3.5rem;
+  .contact-form input[type="submit"] {
+    font-size: 1.5rem;
   }
 
-  .landing-text p {
-    margin: 1rem 0;
-  }
 }
