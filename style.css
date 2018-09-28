@@ -174,8 +174,12 @@ html, body {
   flex-basis: 100%;
   font-size: 1.2rem;
   box-sizing: border-box;
-  text-align: center;
+  text-align: justify;
   padding: 0 0.5rem;
+}
+
+.about-text p {
+  line-height: 1.5;
 }
 
 .about-text h2 {
